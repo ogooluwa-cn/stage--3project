@@ -1,40 +1,89 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Commerce-New
+Overview
 
-## Getting Started
+Commerce-New is a modern e-commerce web application built with Next.js 16, TypeScript, and Convex for real-time backend functionality. It allows users to browse products, manage a shopping cart, proceed through checkout, and receive order confirmation emails. The application features a fully responsive design, optimized for both desktop and mobile devices.
 
-First, run the development server:
+Features
 
-```bash
+Product Pages: View individual products with detailed descriptions and images.
+
+Shopping Cart: Add, remove, and update quantities for products.
+
+Checkout: Secure checkout process with email notifications.
+
+Order Confirmation: Displays order summary after successful checkout.
+
+Responsive Design: Works seamlessly on mobile, tablet, and desktop.
+
+Convex Integration: Real-time backend operations for cart and orders.
+
+TypeScript & Aliases: Strongly typed codebase with clear module aliases for easy imports.
+
+Tech Stack
+
+Frontend: Next.js 16, React 18, Tailwind CSS
+
+Backend: Convex serverless functions
+
+Languages: TypeScript, JavaScript
+
+Version Control: Git & GitHub
+
+Deployment: Vercel
+
+Project Structure
+src/
+├─ app/                  # Pages and routes
+├─ components/           # Reusable UI components
+├─ context/              # React contexts (e.g., CartContext)
+├─ api/                  # API utilities
+convex/
+├─ _generated/           # Convex generated bindings
+├─ orders.ts             # Convex functions for order management
+public/
+├─ images/               # Static images for products
+
+Getting Started
+Prerequisites
+
+Node.js >= 20
+
+npm >= 9
+
+Installation
+git clone https://github.com/ogooluwa-cn/stage--3project.git
+cd commerce-new
+npm install
+npx convex codegen
+
+Running Locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application will run at http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Building for Production
+npm run build
+npm run start
 
-## Learn More
+Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed on Vercel. The latest production build includes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Optimized static pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Server-rendered dynamic routes (API and checkout pages)
 
-## Deploy on Vercel
+Convex serverless functions for real-time operations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# stage--3project
->>>>>>> c27b4f0a959cd8117cf6050f001a0da40e1a2ae0
+Fork the repository
+
+Create a new branch: git checkout -b feature-name
+
+Make your changes and commit: git commit -m "Add feature"
+
+Push to the branch: git push origin feature-name
+
+Open a Pull Request
